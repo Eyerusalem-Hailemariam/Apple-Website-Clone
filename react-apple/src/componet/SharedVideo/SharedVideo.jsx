@@ -6,7 +6,7 @@ function SharedVideo() {
   return (
     <>
       <Outlet/>
-      <Youtube/>
+      {/* <Youtube/> */}
     </>
   )
 }
