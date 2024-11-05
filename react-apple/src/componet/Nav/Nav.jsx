@@ -21,19 +21,18 @@ function Navigation() {
 
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="nav-justified w-100 nav-fill">
-              <Nav.Link className="nav-link" href="/mac">
-                Mac
-              </Nav.Link>
-              <Nav.Link href="/iphone">iphone</Nav.Link>
-              <Nav.Link href="/ipad">ipad</Nav.Link>
-              <Nav.Link href="/watch">watch</Nav.Link>
-              <Nav.Link href="/tv">tv</Nav.Link>
-              <Nav.Link href="/music">Music</Nav.Link>
-              <Nav.Link href="/support">Support</Nav.Link>
-              <Nav.Link href="/search">
+            <Nav.Link as={Link} to="/mac">Mac</Nav.Link>
+
+              <Nav.Link as={Link} to="/iphone">iphone</Nav.Link>
+              <Nav.Link as={Link} to="/ipad">ipad</Nav.Link>
+              <Nav.Link as={Link} to="/watch">watch</Nav.Link>
+              <Nav.Link as={Link} to="/tv">tv</Nav.Link>
+              <Nav.Link as={Link} to="/music">Music</Nav.Link>
+              <Nav.Link as={Link} to="/support">Support</Nav.Link>
+              <Nav.Link as={Link} to="/search">
                 <img src={search} alt="" />
               </Nav.Link>
-              <Nav.Link href="/cart">
+              <Nav.Link as={Link} to="/cart">
                 <img src={cart} alt="" />
               </Nav.Link>
             </Nav>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Four04 from "../Four04/Four04";
 
 const Productpage = () => {
   const { pid } = useParams();
@@ -14,12 +15,12 @@ const Productpage = () => {
         setProducts(singleProduct);
       });
   }, [pid]);
-
+if (products.length) {
   return (
     <div>
       <section className="internal-page-wrapper top-100">
         <div className="container">
-          {products.map((product) => {
+          {products?.map((product) => {
             let id = product.product_url;
             let title = product.product_name;
             let img = product.product_img;
@@ -59,6 +60,9 @@ const Productpage = () => {
       </section>
     </div>
   );
+} else {
+  return <Four04 />
+}
 };
 
 export default Productpage;
