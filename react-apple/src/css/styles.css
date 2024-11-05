@@ -459,3 +459,14 @@ img {
   font-weight: bold;
   color: #0071e3 !important;
 }
+@media (max-width: 768px) {
+  .footer-links-wrapper h3 {
+    cursor: pointer;
+  }
+  .footer-links-wrapper ul {
+    display: none;
+  }
+  .footer-links-wrapper h3.active + ul {
+    display: block;
+  }
+}
